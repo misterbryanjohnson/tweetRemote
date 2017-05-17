@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9356CBFA1C7C0BC000A534A7 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356CBF91C7C0BC000A534A7 /* CreditViewController.swift */; };
 		93D572761C76558C00A2A5F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D572751C76558C00A2A5F3 /* AppDelegate.swift */; };
 		93D572781C76558C00A2A5F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D572771C76558C00A2A5F3 /* ViewController.swift */; };
 		93D5727B1C76558C00A2A5F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D572791C76558C00A2A5F3 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9356CBF91C7C0BC000A534A7 /* CreditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
 		93D572721C76558C00A2A5F3 /* Tweet Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tweet Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D572751C76558C00A2A5F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93D572771C76558C00A2A5F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				93D572751C76558C00A2A5F3 /* AppDelegate.swift */,
 				93D572771C76558C00A2A5F3 /* ViewController.swift */,
+				9356CBF91C7C0BC000A534A7 /* CreditViewController.swift */,
 				93D572791C76558C00A2A5F3 /* Main.storyboard */,
 				93D5727C1C76558C00A2A5F3 /* Assets.xcassets */,
 				93D5727E1C76558C00A2A5F3 /* LaunchScreen.storyboard */,
@@ -91,12 +94,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = rhubarb;
 				TargetAttributes = {
 					93D572711C76558C00A2A5F3 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = SS9CDY2ZY3;
+						DevelopmentTeam = HL4KD6CP4Q;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -138,6 +142,7 @@
 			files = (
 				93D572781C76558C00A2A5F3 /* ViewController.swift in Sources */,
 				93D572761C76558C00A2A5F3 /* AppDelegate.swift in Sources */,
+				9356CBFA1C7C0BC000A534A7 /* CreditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +181,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -220,8 +227,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -240,6 +249,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -248,10 +258,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Tweet Remote/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "rhubarb.com.Tweet-Remote";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bryguy.Tweet-Remote";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -259,10 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Tweet Remote/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "rhubarb.com.Tweet-Remote";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bryguy.Tweet-Remote";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -285,6 +301,7 @@
 				93D572861C76558C00A2A5F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
